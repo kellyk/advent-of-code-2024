@@ -21,7 +21,7 @@ For example:
 
 Maybe the lists are only off by a small amount! To find out, pair up the numbers and measure how far apart they are. Pair up the smallest number in the left list with the smallest number in the right list, then the second-smallest left number with the second-smallest right number, and so on.
 
-### Part 1
+### Part One
 Within each pair, figure out how far apart the two numbers are; you'll need to add up all of those distances. For example, if you pair up a 3 from the left list with a 7 from the right list, the distance apart is 4; if you pair up a 9 with a 3, the distance apart is 6.
 
 In the example list above, the pairs and distances would be as follows:
@@ -37,8 +37,7 @@ To find the total distance between the left list and the right list, add up the 
 Your actual left and right lists contain many location IDs. What is the total distance between your lists?
 
 
-### Part 2
---- Part Two ---
+### Part Two
 Your analysis only confirmed what everyone feared: the two lists of location IDs are indeed very different.
 
 Or are they?
