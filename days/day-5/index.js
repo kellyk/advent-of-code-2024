@@ -6,10 +6,26 @@ fs.readFile('data/sample.txt', 'utf8', (err, input) => {
     return;
   }
 
-  const data = input.trim().split('\n');
-  console.log(data);
+  const [rulesStr, pagesStr] = input.trim().split('\n\n');
+  const rules = rulesStr.split('\n');
+  const pages = pagesStr.split('\n');
+  console.log({rules, pages});
 
   const partOne = () => {
+
+    const rulesByPage = {};
+
+    rules.forEach((rule) => {
+      const [l, r] = rule.split('|');
+      if (!rulesByPage[l]) {
+        rulesByPage[l] = [r];
+      } else {
+        rulesByPage[l].push(r);
+      }
+    });
+    console.log(rulesByPage);
+
+
     return 0;
   }
 
